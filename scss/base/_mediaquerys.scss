@@ -1,0 +1,258 @@
+/*--------------------* Sección de Responsive para Index --------------------*/
+
+@media (max-width: 1100px) {
+    .heroSection {
+        flex-direction: column;
+        justify-content: center;
+        justify-items: center;
+    }
+
+    .heroContent,
+    .imagen {
+        max-width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .heroContent .text {
+        text-align: center;
+        margin-bottom: 20px;
+        padding-bottom: 10px;
+    }
+
+    .imagen img {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        max-width: 50%;
+    }
+
+    .productoUno {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .productoUno .texto,
+    .productoUno .imagen {
+        flex: 0 0 50%;
+        height: 50%;
+    }
+
+    .productoUno .imagen img {
+        height: 50%;
+    }
+
+    .productoDos {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .productoDos .texto {
+        margin-left: 30px;
+    }
+
+    .productoDos .texto,
+    .productoDos .imagen {
+        flex: 0 0 50%;
+        height: 50%;
+    }
+
+    .productoDos .imagen img {
+        height: 50%;
+    }
+
+    .productoTres {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .productoTres .texto,
+    .productoTres .imagen {
+        flex: 0 0 50%;
+        height: 50%;
+    }
+
+    .productoTres .imagen img {
+        height: 50%;
+    }
+}
+
+@media (max-width: 510px) {
+    .imagen {
+        display: none;
+    }
+
+    .heroContent {
+        padding: 0 10px;
+    }
+
+    .heroSection h2 {
+        font-size: 35px;
+    }
+
+    .heroSection p {
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
+
+    .heroSection a {
+        padding: 8px 16px;
+        font-size: 14px;
+    }
+
+    .productoUno {
+        padding: 0 10px;
+    }
+
+    .productoUno .imagen {
+        display: none;
+    }
+
+    .productoUno .texto {
+        height: 100%;
+        display: flex;
+        align-items: center;
+    }
+
+    .productoUno h3 {
+        font-size: 35px;
+    }
+
+    .productoUno p {
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
+
+    .productoDos {
+        padding: 0 10px;
+    }
+
+    .productoDos .imagen {
+        display: none;
+    }
+
+    .productoDos .texto {
+        height: 100%;
+        display: flex;
+        align-items: center;
+    }
+
+    .productoDos h3 {
+        font-size: 35px;
+    }
+
+    .productoDos p {
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
+
+    .productoTres {
+        padding: 0 10px;
+    }
+
+    .productoTres .imagen {
+        display: none;
+    }
+
+    .productoTres .texto {
+        height: 100%;
+        display: flex;
+        align-items: center;
+    }
+
+    .productoTres h3 {
+        font-size: 35px;
+    }
+
+    .productoTres p {
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
+}
+
+@media (max-width: 350px) {
+    .heroSection h2 {
+        font-size: 25px;
+    }
+
+    .heroSection p {
+        font-size: 14px;
+    }
+
+    .heroSection a {
+        padding: 6px 12px;
+        font-size: 12px;
+    }
+
+    .productoUno h3 {
+        font-size: 25px;
+    }
+
+    .productoUno p {
+        font-size: 14px;
+    }
+
+    .productoDos h3 {
+        font-size: 25px;
+    }
+
+    .productoDos p {
+        font-size: 14px;
+    }
+}
+
+
+/* Nosotros */
+@media (max-width: 768px) {
+    .seccionContenedor {
+        padding: 20px;
+    }
+
+    .contenidoHistoria {
+        h2 {
+            font-size: 2rem;
+        }
+
+        p {
+            font-size: 1rem;
+        }
+    }
+}
+
+/* Contacto */
+@media (max-width: 600px) {
+
+    .seccionFormulario,
+    .seccionMapa {
+        padding: 15px;
+    }
+
+    .inputFormulario,
+    .textareaFormulario {
+        font-size: 0.9rem;
+    }
+
+    .botonEnviar {
+        font-size: 0.9rem;
+        padding: 8px 16px;
+    }
+}
+
+/* Recetas */
+@media (max-width: 768px) {
+
+    .publicacionesBlog,
+    .videosGrid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .entradaBlog img,
+    .recetaDestacada img {
+        width: 100%;
+    }
+}

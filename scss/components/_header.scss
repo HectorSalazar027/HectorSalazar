@@ -1,0 +1,51 @@
+
+/*!-------------------- Nav de Bootstrap --------------------*/
+
+.menu {
+    background-color: black !important;
+}
+
+.menu .navbar-nav .nav-link,
+.menu .navbar-toggler-icon {
+    color: white !important;
+    font-size: 18px;
+}
+
+.menu .navbar-toggler {
+    border-color: white;
+}
+
+.menu .btn-outline-secondary {
+    border-color: white;
+    color: white;
+}
+
+.container-fluid {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar-brand {
+    display: flex;
+    align-items: center;
+    margin-left: 15px;
+}
+
+.navbar-nav.me-auto {
+    margin-right: auto;
+}
+
+.navbar-nav.mx-auto {
+    flex: 1;
+    justify-content: center;
+}
+
+.form-control {
+    margin-right: 5px;
+}
+
+header nav img {
+    height: 65px;
+    width: auto;
+}
