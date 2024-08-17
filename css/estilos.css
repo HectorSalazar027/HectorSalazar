@@ -7,458 +7,258 @@
   margin: 0;
   padding: 0;
   border: 0;
-  box-sizing: border-box;
-}
+  box-sizing: border-box; }
 
 body {
   font-family: "Poppins", sans-serif;
   font-weight: 350;
-  font-style: normal;
-}
+  font-style: normal; }
 
 body,
 html {
   width: 100%;
-  overflow-x: hidden;
-}
+  overflow-x: hidden; }
 
 /**-------------------- Variables --------------------*/
 /** -------------------- Extends --------------------*/
-/*!-------------------- Nav de Bootstrap --------------------*/
-.menu {
-  background-color: black !important;
-}
-
-.menu .navbar-nav .nav-link,
-.menu .navbar-toggler-icon {
-  color: white !important;
-  font-size: 18px;
-}
-
-.menu .navbar-toggler {
-  border-color: white;
-}
-
-.menu .btn-outline-secondary {
-  border-color: white;
-  color: white;
-}
-
-.container-fluid {
+.heroSection, .heroSection .heroContent, .imagen, .Bienvenida, .productoUno .texto, .productoDos .texto, .productoTres .texto, .blogPreview, .contenedorSecciones .seccionAccesorios, .contenedorSecciones .seccionBebidas, .contenedorSecciones .seccionUnete {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.navbar-brand {
-  display: flex;
-  align-items: center;
-  margin-left: 15px;
-}
-
-.navbar-nav.me-auto {
-  margin-right: auto;
-}
-
-.navbar-nav.mx-auto {
-  flex: 1;
   justify-content: center;
-}
+  align-items: center; }
 
-.form-control {
-  margin-right: 5px;
-}
-
-header nav img {
-  height: 65px;
-  width: auto;
-}
-
-/*!-------------------- Carrusel de Bootstrap --------------------*/
-#carouselExampleCaptions {
-  position: relative;
-  height: 60vh;
-  overflow: hidden;
-  margin-bottom: 40px;
-}
-#carouselExampleCaptions .carousel-inner {
-  height: 100%;
-}
-#carouselExampleCaptions .carousel-item {
-  height: 100%;
-}
-#carouselExampleCaptions .carousel-item img {
-  -o-object-fit: cover;
-     object-fit: cover;
-  height: 100%;
-  width: 100%;
-}
-#carouselExampleCaptions .carousel-caption {
-  bottom: 20px;
-  background: rgba(0, 0, 0, 0.5);
-  color: #fff;
-  padding: 15px;
-  border-radius: 5px;
-  text-align: center;
-}
-#carouselExampleCaptions .carousel-caption h5 {
-  font-size: 2rem;
-  margin-bottom: 10px;
-}
-#carouselExampleCaptions .carousel-caption p {
-  font-size: 1rem;
-}
-#carouselExampleCaptions .carousel-indicators button {
-  background-color: rgba(0, 0, 0, 0.5);
-}
-#carouselExampleCaptions .carousel-indicators .active {
-  background-color: white;
-}
-
-/*!-------------------- Nav de Bootstrap --------------------*/
-.menu {
-  background-color: black !important;
-}
-
-.menu .navbar-nav .nav-link,
-.menu .navbar-toggler-icon {
-  color: white !important;
-  font-size: 18px;
-}
-
-.menu .navbar-toggler {
-  border-color: white;
-}
-
-.menu .btn-outline-secondary {
-  border-color: white;
-  color: white;
-}
-
-.container-fluid {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.navbar-brand {
-  display: flex;
-  align-items: center;
-  margin-left: 15px;
-}
-
-.navbar-nav.me-auto {
-  margin-right: auto;
-}
-
-.navbar-nav.mx-auto {
-  flex: 1;
-  justify-content: center;
-}
-
-.form-control {
-  margin-right: 5px;
-}
-
-header nav img {
-  height: 65px;
-  width: auto;
-}
-
-/*!-------------------- Index --------------------*/
-/*?-------------------- Body --------------------*/
+/** -------------------- Mixin para Index --------------------*/
 /**-------------------- Header --------------------*/
+/** Aquí hago uso de css para editar el nav de Bootstrap*/
 .menu {
   background-color: black !important;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  transition: background-color 0.3s ease, box-shadow 0.3s ease;
-}
-.menu .navbar-nav .nav-link,
-.menu .navbar-nav .navbar-toggler-icon {
-  color: white !important;
-  font-size: 18px;
-  transition: color 0.3s ease;
-}
-.menu .navbar-nav .navbar-toggler {
-  border-color: white;
-}
-.menu .navbar-nav .navbar-brand {
-  display: flex;
-  align-items: center;
-  color: white;
-  font-size: 24px;
-  font-weight: bold;
-  text-decoration: none;
-  transition: color 0.3s ease;
-}
-.menu .navbar-nav .navbar-brand:hover {
-  color: #FFD700;
-}
-.menu .navbar-nav .btn-outline-secondary {
-  border-color: white;
-  color: white;
-  transition: background-color 0.3s ease, color 0.3s ease;
-}
-.menu .navbar-nav .btn-outline-secondary:hover {
-  background-color: white;
-  color: black;
-}
+  transition: background-color 0.3s ease, box-shadow 0.3s ease; }
+  .menu .navbar-nav .nav-link,
+  .menu .navbar-nav .navbar-toggler-icon {
+    color: white !important;
+    font-size: 18px;
+    transition: color 0.3s ease; }
+  .menu .navbar-nav .nav-link {
+    margin-left: 15px;
+    text-decoration: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease; }
+    .menu .navbar-nav .nav-link:hover {
+      background-color: #008cff;
+      transition: background-color 0.3s ease, color 0.2s ease; }
+  .menu .navbar-toggler {
+    border-color: white;
+    background-color: white; }
+  .menu .navbar-brand {
+    display: flex;
+    align-items: center;
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: color 0.3s ease; }
+  .menu .btn-outline-secondary {
+    background-color: white;
+    border-color: white;
+    color: black; }
+    .menu .btn-outline-secondary:hover {
+      background-color: #008cff;
+      color: white;
+      transition: background-color 0.3s ease, color 0.2s ease; }
 
 .container-fluid {
   display: flex;
   justify-content: space-between;
-  align-items: center;
-}
+  align-items: center; }
 
 .navbar-brand {
   display: flex;
   align-items: center;
-  margin-left: 15px;
-}
+  margin-left: 15px; }
 
 .navbar-nav.me-auto {
-  margin-right: auto;
-}
+  margin-right: auto; }
 
 .navbar-nav.mx-auto {
   flex: 1;
-  justify-content: center;
-}
+  justify-content: center; }
 
 .navbar-nav {
   display: flex;
-  align-items: center;
-}
-.navbar-nav .nav-link {
-  margin-left: 15px;
-  text-decoration: none;
-  padding: 8px 12px;
-  border-radius: 5px;
-  transition: background-color 0.3s ease, color 0.3s ease;
-}
-.navbar-nav .nav-link:hover {
-  background-color: #008cff;
-}
-
-.form-control:focus {
-  box-shadow: 0 0 10px rgba(255, 215, 0, 0.7);
-}
+  align-items: center; }
 
 .form-control {
   margin-right: 5px;
   border-radius: 5px;
-  transition: box-shadow 0.3s ease;
-}
+  transition: box-shadow 0.3s ease; }
+  .form-control:focus {
+    box-shadow: 0 0 10px rgba(255, 217, 0, 0.363); }
+
+.dropdown-item:hover {
+  background-color: #008cffc5;
+  color: white;
+  transition: background-color 0.3s ease, color 0.2s ease; }
 
 header nav img {
   height: 65px;
-  width: auto;
-}
+  width: auto; }
 
+/*!-------------------- Index --------------------*/
+/*?-------------------- Body --------------------*/
 /**-------------------- Main --------------------*/
-body,
-html {
-  width: 100%;
-  overflow-x: hidden;
-}
-
 main {
-  max-width: 100%;
-}
+  max-width: 100%; }
 
 .fuenteEspecial {
   font-family: "Lobster", sans-serif;
   font-weight: 300;
-  font-style: normal;
-}
+  font-style: normal; }
 
 .heroSection {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   padding: 10px;
   padding-top: 4%;
   padding-bottom: 10%;
   background-color: black;
-  color: white;
-}
-.heroSection .heroContent {
-  display: flex;
+  color: white; }
+  .heroSection .heroContent {
+    flex: 1;
+    justify-content: space-evenly;
+    max-width: 40%; }
+    .heroSection .heroContent .text {
+      padding-right: 10px;
+      color: white; }
+  .heroSection h2 {
+    font-size: 45px;
+    margin-bottom: 15px; }
+  .heroSection p {
+    margin-bottom: 20px;
+    margin-top: 15px; }
+  .heroSection a {
+    display: inline-block;
+    padding: 10px 15px;
+    background-color: white;
+    border-radius: 10px;
+    color: black;
+    text-decoration: none;
+    transition: background-color 0.3s ease, color 0.3s ease; }
+    .heroSection a:hover {
+      background-color: #008cffc5;
+      color: white; }
+    .heroSection a:focus {
+      box-shadow: 0 0 5px #008cff; }
+
+.imagen {
   flex: 1;
-  justify-content: space-evenly;
-  align-items: center;
-  max-width: 40%;
-}
-.heroSection .heroContent .text {
-  padding-right: 15px;
-  color: white;
-}
-.heroSection .imagen {
-  flex: 1;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   max-width: 50%;
-  margin-left: 10px;
-}
-.heroSection .imagen img {
-  max-width: 100%;
-  height: auto;
-}
-.heroSection h2 {
-  font-size: 45px;
-  margin-bottom: 15px;
-}
-.heroSection p {
-  margin-bottom: 20px;
-  margin-top: 15px;
-}
-.heroSection a {
-  display: inline-block;
-  padding: 10px 20px;
-  background-color: white;
-  color: black;
-  text-decoration: none;
-  border-radius: 10px;
-  transition: background-color 0.3s ease, color 0.3s ease;
-}
-.heroSection a:hover {
-  background-color: black;
-  color: white;
-}
+  margin-left: 10px; }
+  .imagen img {
+    max-width: 100%;
+    height: auto; }
 
 .Bienvenida {
-  align-items: center;
+  flex-direction: column;
   margin-top: 15px;
   padding-top: 20px;
   background-color: white;
-  color: black;
-}
-.Bienvenida h2 {
-  font-size: 35px;
-  margin-bottom: 10px;
-  text-align: center;
-  margin-top: 5px;
-}
-.Bienvenida p {
-  text-align: center;
-  padding-bottom: 35px;
-}
+  color: black; }
+  .Bienvenida h2 {
+    font-size: 35px;
+    margin-bottom: 10px;
+    text-align: center;
+    margin-top: 5px; }
+  .Bienvenida p {
+    margin-top: 5px;
+    font-size: 17px;
+    text-align: center;
+    padding-bottom: 35px; }
 
-.productoUno,
-.productoDos,
-.productoTres {
+.productoUno, .productoDos, .productoTres {
   display: flex;
   width: 100%;
   height: 60vh;
   margin-bottom: 40px;
-  transition: transform 0.3s ease;
-}
-.productoUno .imagen,
-.productoDos .imagen,
-.productoTres .imagen {
-  flex: 0 0 40%;
-}
-.productoUno .imagen img,
-.productoDos .imagen img,
-.productoTres .imagen img {
-  width: auto;
-  height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-.productoUno .texto,
-.productoDos .texto,
-.productoTres .texto {
-  flex: 0 0 60%;
-  padding: 25px 10px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-}
-.productoUno h3,
-.productoDos h3,
-.productoTres h3 {
-  font-family: "Poppins", sans-serif;
-  font-style: normal;
-  text-align: center;
-  font-weight: 700;
-  margin-bottom: 25px;
-  font-size: 30px;
-}
-.productoUno p,
-.productoDos p,
-.productoTres p {
-  font-family: "Poppins", sans-serif;
-  font-style: normal;
-  text-align: center;
-  font-weight: 450;
-}
-.productoUno:hover,
-.productoDos:hover,
-.productoTres:hover {
-  transform: scale(1.05);
-}
+  transition: transform 0.3s ease; }
+  .productoUno:hover, .productoDos:hover, .productoTres:hover {
+    transform: scale(1.03); }
+  .productoUno .imagen, .productoDos .imagen, .productoTres .imagen {
+    flex: 0 0 40%; }
+    .productoUno .imagen img, .productoDos .imagen img, .productoTres .imagen img {
+      width: auto;
+      height: 100%;
+      object-fit: cover; }
+  .productoUno .texto, .productoDos .texto, .productoTres .texto {
+    flex: 0 0 60%;
+    padding: 25px 10px;
+    flex-direction: column;
+    text-align: center;
+    font-size: 17px; }
+    .productoUno .texto h3, .productoDos .texto h3, .productoTres .texto h3 {
+      font-family: "Poppins", sans-serif;
+      font-style: normal;
+      text-align: center;
+      font-weight: 700;
+      margin-bottom: 25px;
+      font-size: 30px; }
+    .productoUno .texto p, .productoDos .texto p, .productoTres .texto p {
+      font-family: "Poppins", sans-serif;
+      font-style: normal;
+      text-align: center;
+      font-weight: 450; }
 
 .productoUno {
-  background-color: rgb(213, 208, 228);
-  color: rgb(51, 74, 135);
-}
+  background-color: #d5d0e4;
+  color: #334a87; }
 
 .productoDos {
-  background-color: rgb(228, 205, 187);
-  color: rgb(31, 10, 5);
-}
+  background-color: #e4cdbb;
+  color: #1f0a05; }
 
 .productoTres {
-  background-color: rgb(22, 44, 91);
-  color: rgb(240, 232, 222);
-}
+  background-color: #162c5b;
+  color: #f0e8de; }
 
-/** Aquí hago uso de css para editar el carrusel de Bootstrap */
-#carouselExampleCaptions {
-  position: relative;
-  height: 60vh;
-  overflow: hidden;
-  margin-bottom: 40px;
-}
-#carouselExampleCaptions .carousel-inner {
-  height: 100%;
-}
-#carouselExampleCaptions .carousel-item {
-  height: 100%;
-}
-#carouselExampleCaptions .carousel-item img {
-  -o-object-fit: cover;
-     object-fit: cover;
-  height: 100%;
-  width: 100%;
-}
-#carouselExampleCaptions .carousel-caption {
-  bottom: 20px;
-  background: rgba(0, 0, 0, 0.5);
-  color: #fff;
-  padding: 15px;
-  border-radius: 5px;
-  text-align: center;
-}
-#carouselExampleCaptions .carousel-caption h5 {
-  font-size: 2rem;
-  margin-bottom: 10px;
-}
-#carouselExampleCaptions .carousel-caption p {
-  font-size: 1rem;
-}
-#carouselExampleCaptions .carousel-indicators button {
-  background-color: rgba(0, 0, 0, 0.5);
-}
-#carouselExampleCaptions .carousel-indicators button.active {
-  background-color: white;
-}
+.blogPreview {
+  justify-content: space-around;
+  padding: 2rem;
+  background-color: white; }
+  .blogPreview .blogItem {
+    width: 30%;
+    text-align: center;
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s; }
+    .blogPreview .blogItem:hover {
+      transform: translateY(-10px); }
+    .blogPreview .blogItem .blogImage {
+      width: 100%;
+      height: auto;
+      border-bottom: 1px solid #e0e0e0; }
+    .blogPreview .blogItem .blogContent {
+      padding: 1rem; }
+      .blogPreview .blogItem .blogContent h3 {
+        font-size: 1.5rem;
+        margin-bottom: 0.5rem; }
+      .blogPreview .blogItem .blogContent p {
+        font-size: 1rem;
+        color: #666; }
+    .blogPreview .blogItem .blogLink {
+      display: inline-block;
+      margin-top: 1rem;
+      padding: 12px 24px;
+      text-decoration: none;
+      border-radius: 8px;
+      font-weight: bold;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      background-color: #333;
+      color: white;
+      transition: background-color 0.3s ease, transform 0.3s ease; }
+      .blogPreview .blogItem .blogLink:hover {
+        background-color: #555;
+        transform: scale(1.1); }
 
-/** GRIDS */
 .contenedorSecciones {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -467,71 +267,51 @@ main {
   grid-row-gap: 15px;
   padding: 0 20px 35px;
   box-sizing: border-box;
-  margin-bottom: 25px;
-}
+  margin-bottom: 25px; }
+  .contenedorSecciones .seccionAccesorios, .contenedorSecciones .seccionBebidas, .contenedorSecciones .seccionUnete {
+    flex-direction: column;
+    text-align: center;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease; }
+    .contenedorSecciones .seccionAccesorios:hover, .contenedorSecciones .seccionBebidas:hover, .contenedorSecciones .seccionUnete:hover {
+      transform: scale(1.03); }
+  .contenedorSecciones .seccionAccesorios {
+    grid-area: 1 / 1 / 4 / 3;
+    background: linear-gradient(to bottom right, #FAD6AA, #F5B7B1); }
+  .contenedorSecciones .seccionBebidas {
+    grid-area: 1 / 3 / 4 / 5;
+    background: linear-gradient(to bottom right, #FFE2E2, #FFD3E0); }
+  .contenedorSecciones .seccionUnete {
+    grid-area: 4 / 1 / 6 / 5;
+    background: linear-gradient(to bottom right, #D4E7D9, #B3D4A3); }
 
-.seccionAccesorios,
-.seccionBebidas,
-.seccionUnete {
-  padding: 25px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  border-radius: 15px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease;
-}
-.seccionAccesorios:hover,
-.seccionBebidas:hover,
-.seccionUnete:hover {
-  transform: scale(1.03);
-}
-
-.seccionAccesorios {
-  grid-area: 1/1/4/3;
-  background: linear-gradient(to bottom right, #FAD6AA, #F5B7B1);
-}
-
-.seccionBebidas {
-  grid-area: 1/3/4/5;
-  background: linear-gradient(to bottom right, #FFE2E2, #FFD3E0);
-}
-
-.seccionUnete {
-  grid-area: 4/1/6/5;
-  background: linear-gradient(to bottom right, #D4E7D9, #B3D4A3);
-}
-
-.verMas,
-.botonVisitanos {
-  margin-top: 20px;
+.verMas {
   padding: 12px 24px;
   text-decoration: none;
   border-radius: 8px;
   font-weight: bold;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  transition: background-color 0.3s ease, transform 0.3s ease;
-}
-
-.verMas {
   background-color: #FF7F50;
   color: white;
-}
-.verMas:hover {
-  background-color: #FF6347;
-  transform: scale(1.1);
-}
+  transition: background-color 0.3s ease, transform 0.3s ease; }
+  .verMas:hover {
+    background-color: #FF6347;
+    transform: scale(1.1); }
 
 .botonVisitanos {
+  padding: 12px 24px;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: bold;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   background-color: #4CAF50;
   color: white;
-}
-.botonVisitanos:hover {
-  background-color: #45A049;
-  transform: scale(1.1);
-}
+  transition: background-color 0.3s ease, transform 0.3s ease; }
+  .botonVisitanos:hover {
+    background-color: #45A049;
+    transform: scale(1.1); }
 
 /*!-------------------- Nosotros --------------------*/
 .seccionContenedor {
@@ -540,45 +320,266 @@ main {
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   margin-top: 20px;
-  margin-bottom: 40px;
-}
+  margin-bottom: 40px; }
 
 .contenidoHistoria {
   background-color: #ffffff;
   padding: 30px;
   border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-.contenidoHistoria h2 {
-  font-size: 2.5rem;
-  color: #333;
-  margin-bottom: 20px;
-}
-.contenidoHistoria p {
-  font-size: 1.125rem;
-  line-height: 1.6;
-  margin-bottom: 20px;
-}
-.contenidoHistoria p .textoDestacado {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); }
+  .contenidoHistoria h2 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 20px; }
+  .contenidoHistoria p {
+    font-size: 1.125rem;
+    line-height: 1.6;
+    margin-bottom: 20px; }
+
+.textoDestacado {
   color: #6d28d9;
-  font-weight: bold;
-}
+  font-weight: bold; }
 
 .contenedorImagen {
   margin: 20px 0;
   height: 100%;
-  width: auto;
-}
-.contenedorImagen img {
-  width: 100%;
-  height: auto;
+  width: auto; }
+  .contenedorImagen img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); }
+
+/*!-------------------- Productos --------------------*/
+.mainContainer {
+  padding: 20px;
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  font-family: 'Helvetica Neue', Arial, sans-serif; }
+
+.section-title {
+  font-size: 2em;
+  text-align: center;
+  margin-bottom: 20px;
+  color: black; }
+
+.ventaProductos {
+  background-color: #f4f4f4;
   border-radius: 8px;
+  padding: 20px;
+  transition: transform 0.3s ease-in-out; }
+  .ventaProductos:hover {
+    transform: translateY(-10px); }
+
+.productosGrid {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  margin-bottom: 25px; }
+
+.producto {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px black;
+  padding: 15px;
+  text-align: center;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; }
+  .producto:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); }
+  .producto img {
+    max-width: 100%;
+    border-radius: 8px;
+    transition: transform 0.3s ease-in-out; }
+    .producto img:hover {
+      transform: scale(1.015); }
+
+.precio {
+  font-size: 1.2em;
+  font-weight: bold;
+  margin: 10px 0;
+  color: black; }
+
+.descripcion {
+  font-size: 1em;
+  color: #333333;
+  margin: 10px 0; }
+
+.comprar {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 4px;
+  font-weight: bold;
+  transition: background-color 0.3s ease, transform 0.3s ease; }
+  .comprar:hover {
+    background-color: #0056b3;
+    transform: scale(1.05); }
+
+.btn-anim {
+  transition: transform 0.3s ease, box-shadow 0.3s ease; }
+  .btn-anim:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); }
+
+/** Aquí hago uso de css para editar el carrusel de Bootstrap */
+#carouselExampleCaptions {
+  position: relative;
+  height: 60vh;
+  overflow: hidden;
+  margin-bottom: 40px; }
+  #carouselExampleCaptions .carousel-inner {
+    height: 100%; }
+  #carouselExampleCaptions .carousel-item {
+    height: 100%; }
+    #carouselExampleCaptions .carousel-item img {
+      object-fit: cover;
+      height: 100%;
+      width: 100%; }
+  #carouselExampleCaptions .carousel-caption {
+    bottom: 20px;
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    padding: 15px;
+    border-radius: 5px;
+    text-align: center; }
+    #carouselExampleCaptions .carousel-caption h5 {
+      font-size: 2rem;
+      margin-bottom: 10px; }
+    #carouselExampleCaptions .carousel-caption p {
+      font-size: 1rem; }
+  #carouselExampleCaptions .carousel-indicators button {
+    background-color: rgba(0, 0, 0, 0.5); }
+  #carouselExampleCaptions .carousel-indicators .active {
+    background-color: white; }
+
+/*!-------------------- Recetas --------------------*/
+/**-------------------- Recetas --------------------*/
+.contenidoPrincipal {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto; }
+
+.seccionBlog,
+.seccionVideos,
+.seccionRecetas,
+.seccionRecetasVideo,
+.seccionEnviarReceta {
+  margin-bottom: 40px;
+  width: 100%; }
+
+.publicacionesBlog,
+.videosGrid {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); }
+
+.entradaBlog,
+.recetaDestacada,
+.video {
+  background-color: #ffffff;
+  border-radius: 8px;
+  padding: 20px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  margin-bottom: 5px; }
+  .entradaBlog:hover,
+  .recetaDestacada:hover,
+  .video:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); }
+  .entradaBlog img,
+  .entradaBlog iframe,
+  .recetaDestacada img,
+  .recetaDestacada iframe,
+  .video img,
+  .video iframe {
+    width: 100%;
+    border-radius: 8px;
+    transition: transform 0.3s ease-in-out;
+    margin-bottom: 20px; }
+    .entradaBlog img:hover,
+    .entradaBlog iframe:hover,
+    .recetaDestacada img:hover,
+    .recetaDestacada iframe:hover,
+    .video img:hover,
+    .video iframe:hover {
+      transform: scale(1.03); }
+
+.enlaceLeerMas,
+.enlaceVerReceta {
+  text-decoration: none;
+  color: #007bff;
+  font-weight: bold;
+  position: relative;
+  padding: 5px 0;
+  transition: color 0.3s ease, transform 0.3s ease;
+  margin-top: 10px; }
+  .enlaceLeerMas::before,
+  .enlaceVerReceta::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #007bff;
+    visibility: hidden;
+    transform: scaleX(0);
+    transition: all 0.3s ease-in-out; }
+  .enlaceLeerMas:hover,
+  .enlaceVerReceta:hover {
+    color: #0056b3;
+    transform: translateY(-2px); }
+    .enlaceLeerMas:hover::before,
+    .enlaceVerReceta:hover::before {
+      visibility: visible;
+      transform: scaleX(1); }
+
+.seccionEnviarReceta form {
+  display: grid;
+  gap: 15px;
+  max-width: 600px;
+  width: 100%;
+  margin: 0 auto; }
+
+.seccionEnviarReceta label {
+  font-weight: bold;
+  font-size: 16px; }
+
+.seccionEnviarReceta input,
+.seccionEnviarReceta textarea {
+  padding: 10px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  width: 100%;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease; }
+  .seccionEnviarReceta input:focus,
+  .seccionEnviarReceta textarea:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 8px rgba(0, 123, 255, 0.2); }
+
+.seccionEnviarReceta button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease; }
+  .seccionEnviarReceta button:hover {
+    background-color: #0056b3;
+    transform: scale(1.03); }
 
 /*!-------------------- Contacto --------------------*/
-.seccionFormulario,
-.seccionMapa {
+.seccionFormulario, .seccionMapa {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -589,40 +590,34 @@ main {
   padding: 20px;
   background: #FFF5E1;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  border-radius: 10px;
-}
+  border-radius: 10px; }
 
 .formularioContacto {
   display: flex;
   flex-direction: column;
-  width: 100%;
-}
+  width: 100%; }
 
 .campoFormulario {
   display: flex;
   flex-direction: column;
   margin-bottom: 15px;
-  width: 100%;
-}
-.campoFormulario .etiquetaFormulario {
+  width: 100%; }
+
+.etiquetaFormulario {
   margin-bottom: 5px;
-  font-weight: bold;
-}
-.campoFormulario .inputFormulario,
-.campoFormulario .textareaFormulario {
+  font-weight: bold; }
+
+.inputFormulario, .textareaFormulario {
   padding: 10px;
   border: 1px solid #ccc;
   border-radius: 5px;
   font-size: 1rem;
   background-color: #FFF;
-  width: 100%;
-}
-.campoFormulario .inputFormulario:focus,
-.campoFormulario .textareaFormulario:focus {
-  background-color: #FFFAF0;
-  outline: none;
-  border-color: #6B4F4F;
-}
+  width: 100%; }
+  .inputFormulario:focus, .textareaFormulario:focus {
+    background-color: #FFFAF0;
+    outline: none;
+    border-color: #6B4F4F; }
 
 .botonEnviar {
   padding: 10px 20px;
@@ -632,506 +627,133 @@ main {
   border-radius: 5px;
   font-size: 1rem;
   cursor: pointer;
-  align-self: center;
-}
-.botonEnviar:hover {
-  background-color: #8B5E5E;
-}
+  align-self: center; }
+  .botonEnviar:hover {
+    background-color: #8B5E5E; }
 
 .mapaUbicacion {
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  width: 100%;
-}
-
-/*!-------------------- Productos --------------------*/
-.mainContainer {
-  padding: 20px;
-  display: grid;
-  gap: 20px;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  font-family: "Helvetica Neue", Arial, sans-serif;
-}
-
-.section-title {
-  font-size: 2em;
-  text-align: center;
-  margin-bottom: 20px;
-  color: black;
-}
-
-.ventaProductos {
-  background-color: #f4f4f4;
-  border-radius: 8px;
-  padding: 20px;
-  transition: transform 0.3s ease-in-out;
-}
-.ventaProductos:hover {
-  transform: translateY(-10px);
-}
-
-.productosGrid {
-  display: grid;
-  gap: 20px;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-}
-
-.producto {
-  background-color: #fff;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px black;
-  padding: 15px;
-  text-align: center;
-  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-}
-.producto:hover {
-  transform: scale(1.05);
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
-}
-.producto img {
-  max-width: 100%;
-  border-radius: 8px;
-  transition: transform 0.3s ease-in-out;
-}
-.producto img:hover {
-  transform: scale(1.015);
-}
-
-.precio {
-  font-size: 1.2em;
-  font-weight: bold;
-  margin: 10px 0;
-  color: black;
-}
-
-.descripcion {
-  font-size: 1em;
-  color: #333333;
-  margin: 10px 0;
-}
-
-.comprar {
-  display: inline-block;
-  padding: 10px 20px;
-  background-color: #007bff;
-  color: #fff;
-  text-decoration: none;
-  border-radius: 4px;
-  font-weight: bold;
-  transition: background-color 0.3s ease, transform 0.3s ease;
-}
-.comprar:hover {
-  background-color: #0056b3;
-  transform: scale(1.05);
-}
-
-.btn-anim {
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-.btn-anim:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
-
-/*!-------------------- Recetas --------------------*/
-.contenidoPrincipal {
-  padding: 20px;
-}
-
-.seccionBlog {
-  margin-bottom: 40px;
-}
-
-.publicacionesBlog {
-  display: grid;
-  gap: 20px;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-}
-
-.entradaBlog {
-  background-color: #f4f4f4;
-  border-radius: 8px;
-  padding: 15px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-}
-.entradaBlog:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
-}
-.entradaBlog img {
-  width: 100%;
-  border-radius: 8px;
-  transition: transform 0.3s ease-in-out;
-}
-.entradaBlog img:hover {
-  transform: scale(1.02);
-}
-
-.enlaceLeerMas {
-  margin-top: 10px;
-  text-decoration: none;
-  position: relative;
-  padding: 5px 0;
-  transition: color 0.3s ease;
-}
-.enlaceLeerMas::before {
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 2px;
-  bottom: 0;
-  left: 0;
-  background-color: #007bff;
-  visibility: hidden;
-  transform: scaleX(0);
-  transition: all 0.3s ease-in-out;
-}
-.enlaceLeerMas:hover::before {
-  visibility: visible;
-  transform: scaleX(1);
-}
-.enlaceLeerMas:hover {
-  color: #007bff;
-}
-
-/* Sección de vídeos */
-.seccionVideos {
-  margin-bottom: 40px;
-}
-
-.videosGrid {
-  display: grid;
-  gap: 20px;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-}
-
-.video {
-  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-}
-.video iframe {
-  width: 100%;
-  border-radius: 8px;
-  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-}
-.video iframe:hover {
-  transform: scale(1.05);
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
-}
-
-.seccionRecetas {
-  margin-bottom: 40px;
-}
-
-.recetaDestacada {
-  background-color: #f4f4f4;
-  border-radius: 8px;
-  padding: 15px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-}
-.recetaDestacada:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
-}
-.recetaDestacada img {
-  width: 100%;
-  border-radius: 8px;
-  transition: transform 0.3s ease-in-out;
-}
-.recetaDestacada img:hover {
-  transform: scale(1.02);
-}
-
-.enlaceVerReceta {
-  text-decoration: none;
-  position: relative;
-  padding: 5px 0;
-  transition: color 0.3s ease;
-}
-.enlaceVerReceta::before {
-  position: absolute;
-  width: 100%;
-  height: 2px;
-  bottom: 0;
-  left: 0;
-  background-color: #007bff;
-  visibility: hidden;
-  transform: scaleX(0);
-  transition: all 0.3s ease-in-out;
-}
-.enlaceVerReceta:hover::before {
-  visibility: visible;
-  transform: scaleX(1);
-}
-.enlaceVerReceta:hover {
-  color: #007bff;
-}
-
-.seccionRecetasVideo {
-  margin-bottom: 40px;
-}
-
-.videosGrid .video {
-  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-}
-.videosGrid .video:hover {
-  transform: scale(1.02);
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
-}
-
-.seccionEnviarReceta form {
-  display: grid;
-  gap: 10px;
-}
-.seccionEnviarReceta label {
-  font-weight: bold;
-}
-.seccionEnviarReceta input,
-.seccionEnviarReceta textarea {
-  padding: 10px;
-  border-radius: 4px;
-  border: 1px solid #ccc;
-  width: 100%;
-  transition: border-color 0.3s ease, box-shadow 0.3s ease;
-}
-.seccionEnviarReceta input:focus,
-.seccionEnviarReceta textarea:focus {
-  border-color: #007bff;
-  box-shadow: 0 0 8px rgba(0, 123, 255, 0.2);
-}
-.seccionEnviarReceta button {
-  padding: 10px 20px;
-  background-color: #007bff;
-  color: #fff;
-  border: none;
-  border-radius: 4px;
-  font-weight: bold;
-  cursor: pointer;
-  transition: background-color 0.3s ease, transform 0.3s ease;
-}
-.seccionEnviarReceta button:hover {
-  background-color: #0056b3;
-  transform: scale(1.04);
-}
+  width: 100%; }
 
 /**-------------------- Footer --------------------*/
 footer {
-  background-color: rgb(0, 0, 0);
+  background-color: black;
   padding: 5px;
   margin-top: 10px;
-  text-align: center;
-}
-footer p {
-  color: white;
-  margin: 10px 0;
-}
-footer img {
-  width: 20px;
-  height: auto;
-  margin: 5px;
-}
+  text-align: center; }
+  footer p {
+    color: white;
+    margin: 10px 0; }
+  footer img {
+    width: 20px;
+    height: auto;
+    margin: 5px; }
 
 /*--------------------* Sección de Responsive para Index --------------------*/
 @media (max-width: 1100px) {
   .heroSection {
     flex-direction: column;
     justify-content: center;
-    justify-items: center;
-  }
+    justify-items: center; }
   .heroContent,
   .imagen {
     max-width: 100%;
     display: flex;
     justify-content: center;
-    align-items: center;
-  }
+    align-items: center; }
   .heroContent .text {
     text-align: center;
     margin-bottom: 20px;
-    padding-bottom: 10px;
-  }
+    padding-bottom: 10px; }
   .imagen img {
     flex: 1;
     display: flex;
     justify-content: center;
     align-items: center;
-    max-width: 50%;
-  }
-  .productoUno {
+    max-width: 50%; }
+  .productoUno, .productoDos, .productoTres {
     flex-direction: column;
-    height: auto;
-  }
-  .productoUno .texto,
-  .productoUno .imagen {
-    flex: 0 0 50%;
-    height: 50%;
-  }
-  .productoUno .imagen img {
-    height: 50%;
-  }
-  .productoDos {
-    flex-direction: column;
-    height: auto;
-  }
+    height: auto; }
+    .productoUno .texto,
+    .productoUno .imagen, .productoDos .texto,
+    .productoDos .imagen, .productoTres .texto,
+    .productoTres .imagen {
+      flex: 0 0 50%;
+      height: 50%; }
+    .productoUno .imagen img, .productoDos .imagen img, .productoTres .imagen img {
+      height: 50%; }
   .productoDos .texto {
-    margin-left: 30px;
-  }
-  .productoDos .texto,
-  .productoDos .imagen {
-    flex: 0 0 50%;
-    height: 50%;
-  }
-  .productoDos .imagen img {
-    height: 50%;
-  }
-  .productoTres {
-    flex-direction: column;
-    height: auto;
-  }
-  .productoTres .texto,
-  .productoTres .imagen {
-    flex: 0 0 50%;
-    height: 50%;
-  }
-  .productoTres .imagen img {
-    height: 50%;
-  }
-}
+    margin-left: 30px; } }
+
 @media (max-width: 510px) {
   .imagen {
-    display: none;
-  }
+    display: none; }
   .heroContent {
-    padding: 0 10px;
-  }
+    padding: 0 10px; }
   .heroSection h2 {
-    font-size: 35px;
-  }
+    font-size: 35px; }
   .heroSection p {
     font-size: 16px;
-    margin-bottom: 10px;
-  }
+    margin-bottom: 10px; }
   .heroSection a {
     padding: 8px 16px;
-    font-size: 14px;
-  }
-  .productoUno {
-    padding: 0 10px;
-  }
-  .productoUno .imagen {
-    display: none;
-  }
-  .productoUno .texto {
-    height: 100%;
-    display: flex;
-    align-items: center;
-  }
-  .productoUno h3 {
-    font-size: 35px;
-  }
-  .productoUno p {
-    font-size: 16px;
-    margin-bottom: 10px;
-  }
-  .productoDos {
-    padding: 0 10px;
-  }
-  .productoDos .imagen {
-    display: none;
-  }
-  .productoDos .texto {
-    height: 100%;
-    display: flex;
-    align-items: center;
-  }
-  .productoDos h3 {
-    font-size: 35px;
-  }
-  .productoDos p {
-    font-size: 16px;
-    margin-bottom: 10px;
-  }
-  .productoTres {
-    padding: 0 10px;
-  }
-  .productoTres .imagen {
-    display: none;
-  }
-  .productoTres .texto {
-    height: 100%;
-    display: flex;
-    align-items: center;
-  }
-  .productoTres h3 {
-    font-size: 35px;
-  }
-  .productoTres p {
-    font-size: 16px;
-    margin-bottom: 10px;
-  }
-}
+    font-size: 14px; }
+  .productoUno, .productoDos, .productoTres {
+    padding: 0 10px; }
+    .productoUno .imagen, .productoDos .imagen, .productoTres .imagen {
+      display: none; }
+    .productoUno .texto, .productoDos .texto, .productoTres .texto {
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+    .productoUno h3, .productoDos h3, .productoTres h3 {
+      font-size: 35px; }
+    .productoUno p, .productoDos p, .productoTres p {
+      font-size: 16px;
+      margin-bottom: 10px; } }
+
 @media (max-width: 350px) {
   .heroSection h2 {
-    font-size: 25px;
-  }
+    font-size: 25px; }
   .heroSection p {
-    font-size: 14px;
-  }
+    font-size: 14px; }
   .heroSection a {
     padding: 6px 12px;
-    font-size: 12px;
-  }
-  .productoUno h3 {
-    font-size: 25px;
-  }
-  .productoUno p {
-    font-size: 14px;
-  }
-  .productoDos h3 {
-    font-size: 25px;
-  }
-  .productoDos p {
-    font-size: 14px;
-  }
-}
-/* Nosotros */
+    font-size: 12px; }
+  .productoUno h3, .productoDos h3 {
+    font-size: 25px; }
+  .productoUno p, .productoDos p {
+    font-size: 14px; } }
+
+/*--------------------* Sección de Responsive para Nosotros --------------------*/
+/* Diseño Responsivo */
 @media (max-width: 768px) {
   .seccionContenedor {
-    padding: 20px;
-  }
+    padding: 20px; }
   .contenidoHistoria h2 {
-    font-size: 2rem;
-  }
+    font-size: 2rem; }
   .contenidoHistoria p {
-    font-size: 1rem;
-  }
-}
-/* Contacto */
-@media (max-width: 600px) {
-  .seccionFormulario,
-  .seccionMapa {
-    padding: 15px;
-  }
-  .inputFormulario,
-  .textareaFormulario {
-    font-size: 0.9rem;
-  }
-  .botonEnviar {
-    font-size: 0.9rem;
-    padding: 8px 16px;
-  }
-}
-/* Recetas */
+    font-size: 1rem; } }
+
+/*--------------------* Sección de Responsive para Recetas --------------------*/
 @media (max-width: 768px) {
   .publicacionesBlog,
   .videosGrid {
-    grid-template-columns: 1fr;
-  }
-}
+    grid-template-columns: 1fr; } }
+
 @media (max-width: 480px) {
   .entradaBlog img,
   .recetaDestacada img {
-    width: 100%;
-  }
-}/*# sourceMappingURL=estilos.css.map */
+    width: 100%; } }
+
+/*--------------------* Sección de Responsive para Concacto --------------------*/
+@media (max-width: 600px) {
+  .seccionFormulario, .seccionMapa {
+    padding: 15px; }
+  .inputFormulario, .textareaFormulario {
+    font-size: 0.9rem; }
+  .botonEnviar {
+    font-size: 0.9rem;
+    padding: 8px 16px; } }

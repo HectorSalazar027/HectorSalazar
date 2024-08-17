@@ -4,24 +4,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!--* FAVICON que sirve para mejorar el SEO del motor de busqueda -->
-    <link rel="shortcut icon" href="../img/hot-coffee-favicon.png" type="image/x-icon">
+    <link rel="shortcut icon" href="./img/hot-coffee-favicon.png" type="image/x-icon">
+    <meta name="description" content="Boxha, tu café artesanal en CDMX. Disfruta de café de calidad, postres veganos, jazz en vivo y un ambiente natural ideal para relajarte o trabajar.">
+    <meta name="keywords" content="Boxha, café artesanal, CDMX, café vegano, postres veganos, café con jazz, cafetería CDMX, café orgánico, accesorios de café, café y plantas, espacio de trabajo, wifi gratuito, eventos especiales, ambiente acogedor, café de calidad">
+    <meta property="og:title" content="Boxha - Café Artesanal en CDMX">
+    <meta property="og:description" content="Descubre Boxha, tu destino en CDMX para café artesanal, postres veganos, y jazz en vivo. Relájate y trabaja en un ambiente natural y acogedor.">
+    <meta property="og:image" content="./img/logo.png">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Boxha">
     <!--* Bootstrap-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <!--* Se modifican los atributos mediante css-->
-    <!-- <link rel="stylesheet" href="../css/style.css"> -->
+    <!-- <link rel="stylesheet" href="../css/style.css"  -->
     <!--* SCSS--> 
     <link rel="stylesheet" href="../css/estilos.css">
-    <title>Blog | Boxha</title>
+    <title>Blog | Boxha - Café Artesanal en CDMX</title>
 </head>
+
 
 <body>
     <!--* Navegador de Bootstrap-->
     <header>
         <nav class="menu navbar navbar-expand-lg bg-body-tertiary sticky-top">
             <div class="container-fluid">
-                <a class="navbar-brand" href="#"><img src="../img/logo.png" alt="Logo de la cafetería"></a>
+                <a class="navbar-brand" href="#"><img src="../img/logo.png" alt="Logo de la marca de la cafetería"></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                     aria-expanded="false" aria-label="Toggle navigation">
@@ -61,68 +67,74 @@
             </div>
         </nav>
     </header>
+
     <main class="contenidoPrincipal">
         <section class="seccionBlog">
-            <article class="publicacionesBlog">
-                <h2>Últimas Publicaciones</h2>
-                <div class="entradaBlog">
+            <h2>Últimas Publicaciones</h2>
+            <div class="publicacionesBlog">
+                <article class="entradaBlog">
                     <h3>La mejor forma de empezar el día</h3>
                     <p>Publicado el: <time datetime="2024-06-18">18 de junio de 2024</time></p>
                     <p>Empezar el día con un desayuno saludable es fundamental para tener energía durante toda la jornada...</p>
                     <img src="../img/desayuno_cafe.jpg" alt="Imagen de un desayuno saludable con café">
-                    <p><a href="https://www.dolce-gusto.es/blog/mas-alla-del-cafe/cafe-desayuno#:~:text=Tomar%20caf%C3%A9%20en%20el%20desayuno%20es%20una%20opci%C3%B3n%20id%C3%B3nea%20para,aportar%20un%20extra%20de%20energ%C3%ADa." class="enlaceLeerMas">Leer más</a></p>
-                </div>
-                <div class="entradaBlog">
+                    <a href="https://www.dolce-gusto.es/blog/mas-alla-del-cafe/cafe-desayuno#:~:text=Tomar%20caf%C3%A9%20en%20el%20desayuno%20es%20una%20opci%C3%B3n%20id%C3%B3nea%20para,aportar%20un%20extra%20de%20energ%C3%ADa." class="enlaceLeerMas">Leer más</a>
+                </article>
+                <article class="entradaBlog">
                     <h3>Consejos para una vida saludable</h3>
-                    <p>Publicado el: <time datetime="2024-06-15">15 de junio de 2024</time></p>
+                    <p>Publicado el: <time datetime="2024-06-15">23 de julio de 2024</time></p>
                     <p>Vivir de manera saludable no solo se trata de comer bien, sino también de mantener una mente positiva...</p>
                     <img src="../img/positivo_cafe.jpeg" alt="Imagen representativa de tareas por hacer para tener una actitud positiva">
-                    <p><a href="https://cafe1820.com/claves-para-tener-actitud-positiva-durante-la-cuarentena/" class="enlaceLeerMas">Leer más</a></p>
-                </div>
-            </article>
+                    <a href="https://cafe1820.com/claves-para-tener-actitud-positiva-durante-la-cuarentena/" class="enlaceLeerMas">Leer más</a>
+                </article>
+                <article class="entradaBlog">
+                    <h3>Una guía completa para comprender las notas de cata en el café</h3>
+                    <p>Publicado el: <time datetime="2024-06-15">14 de agosto de 2024</time></p>
+                    <p>Aprende a disfrutar las notas de un buen café</p>
+                    <img src="../img/vistaalta_cafe.jpg" alt="Imagen representativa de tareas por hacer para tener una actitud positiva">
+                    <a href="https://www.eraofwe.com/coffee-lab/es/articles/una-gu%C3%ADa-completa-para-comprender-las-notas-de-cata-en-el-caf%C3%A9" class="enlaceLeerMas">Leer más</a>
+                </article>
+            </div>
         </section>
         
         <section class="seccionVideos">
             <h2>Vídeos Destacados</h2>
             <div class="videosGrid">
-                <div class="video">
+                <article class="video">
                     <h3>Rutina de Ejercicios</h3>
                     <iframe width="560" height="315" src="https://www.youtube.com/embed/jP0by40KfjE?si=VCLIa5IcduRDpAU3" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                </div>
-                <div class="video">
+                </article>
+                <article class="video">
                     <h3>El futuro del cultivo y la producción del café</h3>
                     <iframe width="560" height="315" src="https://www.youtube.com/embed/DLUJZ1nvN-w?si=hhJCxiWFAQzxL8M8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                </div>
+                </article>
             </div>
         </section>
         
         <section class="seccionRecetas">
+            <h2>Recetas Destacadas</h2>
             <article class="recetaDestacada">
-                <h2>Recetas Destacadas</h2>
-                <div class="receta">
-                    <h3>Latte de Vainilla</h3>
-                    <p>Publicado el: <time datetime="2024-06-10">10 de junio de 2024</time></p>
-                    <p>Un delicioso y cremoso latte con un toque de vainilla que puedes preparar en casa...</p>
-                    <img src="../img/latte_vainilla.jpg" alt="Imagen de latte de vainilla">
-                    <p><a href="" class="enlaceVerReceta">Ver receta completa</a></p>
-                </div>
+                <h3>Latte de Vainilla</h3>
+                <p>Publicado el: <time datetime="2024-06-10">10 de junio de 2024</time></p>
+                <p>Un delicioso y cremoso latte con un toque de vainilla que puedes preparar en casa...</p>
+                <img src="../img/latte_vainilla.jpg" alt="Imagen de latte de vainilla">
+                <a href="https://www.starbucksathome.com/uy/recetas/vainilla-latte" class="enlaceLeerMas">Ver receta completa</a>
             </article>
         </section>
         
         <section class="seccionRecetasVideo">
             <h2>Recetas en Video</h2>
             <div class="videosGrid">
-                <div class="video">
+                <article class="video">
                     <h3>Preparación de Cold Brew</h3>
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/2QVvPWkN1og?si=tsi7-TOw2jL2-7nI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                </div>
-                <div class="video">
-                    <h3>Café Dalgona</h3>
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/xxPev9wLuFs?si=NjHS1Vuv84L3Z3SW" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                </div>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/2QVvPWkN1og?si=ICg_bMl1eubV9Z0s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </article>
+                <article class="video">
+                    <h3>Café Moka Casero</h3>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/DiIC4Hw57Zg?si=RRj3dCdoFq7Gv8pj" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </article>
             </div>
         </section>
-        
+
         <section class="seccionEnviarReceta">
             <h2>Envía tu Receta de Café</h2>
             <form action="enviar-receta.html" method="post">
@@ -135,22 +147,14 @@
         </section>
     </main>
 </body>
-
-
+    </main>
+    
     <footer>
-        <p>Nuestras redes sociales:</p>
-
-        <div>
-            <!--* Esto es para redes sociales e imagenes clickeables-->
-            <!--! Las rutas no conducen a un perfil, ya que no existe aún una página de Facebook o Instagram-->
-            <a href="https://www.instagram.com/" target="_blank"><img src="../img/instagram.png" alt="logo de Instagram"></a>
-
-            <a href="https://www.facebook.com/" target="_blank"><img src="../img/facebook.png" alt="logo de Facebook"
-                    id="Facebook"></a>
+        <div class="footerContenido">
+            <p>&copy; 2024 Boxha - Todos los derechos reservados.</p>
         </div>
-        <p>&copy; 2024 Tienda de Café. Todos los derechos reservados.</p>
     </footer>
-    <!--* Boostrap-->
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>

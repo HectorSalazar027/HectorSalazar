@@ -27,110 +27,26 @@ $color-principal: black;
 $color-secundario: white;
 
 /** -------------------- Extends --------------------*/
-%flex{
+%flex {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-/*!-------------------- Nav de Bootstrap --------------------*/
+/** -------------------- Mixin para Index --------------------*/
 
-.menu {
-    background-color: black !important;
-}
+@mixin boton($bg-color, $text-color, $hover-bg-color, $hover-scale: 1.1) {
+    padding: 12px 24px;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background-color: $bg-color;
+    color: $text-color;
+    transition: background-color 0.3s ease, transform 0.3s ease;
 
-.menu .navbar-nav .nav-link,
-.menu .navbar-toggler-icon {
-    color: white !important;
-    font-size: 18px;
-}
-
-.menu .navbar-toggler {
-    border-color: white;
-}
-
-.menu .btn-outline-secondary {
-    border-color: white;
-    color: white;
-}
-
-.container-fluid {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.navbar-brand {
-    display: flex;
-    align-items: center;
-    margin-left: 15px;
-}
-
-.navbar-nav.me-auto {
-    margin-right: auto;
-}
-
-.navbar-nav.mx-auto {
-    flex: 1;
-    justify-content: center;
-}
-
-.form-control {
-    margin-right: 5px;
-}
-
-header nav img {
-    height: 65px;
-    width: auto;
-}
-
-/*!-------------------- Carrusel de Bootstrap --------------------*/
-
-#carouselExampleCaptions {
-    position: relative;
-    height: 60vh;
-    overflow: hidden;
-    margin-bottom: 40px;
-
-    .carousel-inner {
-        height: 100%;
-    }
-
-    .carousel-item {
-        height: 100%;
-
-        img {
-            object-fit: cover;
-            height: 100%;
-            width: 100%;
-        }
-    }
-
-    .carousel-caption {
-        bottom: 20px;
-        background: rgba(0, 0, 0, 0.5);
-        color: #fff;
-        padding: 15px;
-        border-radius: 5px;
-        text-align: center;
-
-        h5 {
-            font-size: 2rem;
-            margin-bottom: 10px;
-        }
-
-        p {
-            font-size: 1rem;
-        }
-    }
-
-    .carousel-indicators {
-        button {
-            background-color: rgba(0, 0, 0, 0.5);
-        }
-
-        .active {
-            background-color: white;
-        }
+    &:hover {
+        background-color: $hover-bg-color;
+        transform: scale($hover-scale);
     }
 }
